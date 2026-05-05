@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahmoud Samir</title>
+
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#1e293b;
+      --text:white;
+      --accent:#38bdf8;
+    }
+
+    body.light{
+      --bg:#f1f5f9;
+      --card:white;
+      --text:#0f172a;
+      --accent:#0284c7;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial;
+      transition:0.3s;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+    }
+
+    /* NAVBAR */
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:15px 20px;
+      background:var(--card);
+      position:sticky;
+      top:0;
+      z-index:100;
+    }
+
+    nav h2{
+      color:var(--accent);
+    }
+
+    nav button{
+      padding:8px 12px;
+      border:none;
+      background:var(--accent);
+      color:white;
+      border-radius:8px;
+      cursor:pointer;
+    }
+
+    header{
+      text-align:center;
+      padding:50px 20px;
+    }
+
+    .profile-img{
+      width:140px;
+      height:140px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid var(--accent);
+      margin-bottom:15px;
+    }
+
+    h1{font-size:28px;}
+    .title{color:var(--accent);}
+
+    section{
+      max-width:900px;
+      margin:auto;
+      padding:30px 20px;
+    }
+
+    .box{
+      background:var(--card);
+      padding:20px;
+      margin-top:15px;
+      border-radius:12px;
+      opacity:0;
+      transform:translateY(30px);
+    }
+
+    ul{list-style:none;}
+    ul li{
+      padding:8px 0;
+      border-bottom:1px solid #334155;
+    }
+
+    a{color:var(--accent); text-decoration:none;}
+
+    a:hover{text-decoration:underline;}
+
+    footer{
+      text-align:center;
+      padding:20px;
+      color:gray;
+    }
+
+    /* animation show */
+    .show{
+      opacity:1 !important;
+      transform:translateY(0) !important;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h2>Mahmoud Samir</h2>
+  <button onclick="toggleMode()">🌙 / ☀️</button>
+</nav>
+
+<!-- HEADER -->
+<header>
+  <img src="./images/6041619530968141197_120.jpg" class="profile-img" alt="profile">
+  <h1>Mahmoud Samir</h1>
+  <p class="title">Front End Developer</p>
+</header>
+
+<!-- ABOUT -->
+<section>
+  <h2>👨‍💻 About me</h2>
+  <div class="box">
+    <p>
+      My name is Mahmoud Samir, and I am deeply interested in web development. 
+      I am currently focused on learning and improving my skills step by step by building simple and practical projects. 
+      I enjoy experimenting with new ideas, writing code, and understanding how websites work behind the scenes.
+
+I believe that the best way to learn programming is through hands-on practice,
+ so I constantly challenge myself to create small projects that help me grow and gain real experience.
+  Every project I build teaches me something new, whether it’s about HTML, CSS, JavaScript, or problem-solving in general.
+
+I am passionate about improving my knowledge in front-end and back-end development,
+ and I aim to become more advanced over time by learning modern tools, frameworks, and best practices in the industry.
+ <hr><br><hr>
+اسمي محمود سمير، وأنا مهتم جدًا بتطوير الويب. أركز حاليًا على التعلم وتحسين مهاراتي خطوة بخطوة من خلال بناء مشاريع بسيطة وعملية. أحب تجربة الأفكار الجديدة، وكتابة الأكواد، وفهم كيفية عمل المواقع من وراء الكواليس.
+
+أؤمن أن أفضل طريقة لتعلم البرمجة هي من خلال التطبيق العملي، لذلك أتحدى نفسي باستمرار لإنشاء مشاريع صغيرة تساعدني على التطور واكتساب خبرة حقيقية. كل مشروع أقوم ببنائه يعلمني شيئًا جديدًا، سواء في HTML أو CSS أو JavaScript أو حل المشكلات بشكل عام.
+
+أنا شغوف بتطوير معرفتي في مجالات تطوير الواجهة الأمامية والخلفية، وأهدف إلى أن أصبح أكثر تقدمًا مع الوقت من خلال تعلم الأدوات الحديثة والأُطر البرمجية وأفضل الممارسات في هذا المجال.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section>
+  <h2>🧠 skills</h2>
+  <div class="box">
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+  <h2>💼 Project</h2>
+  <div class="box">
+    <p>🚀 مشاريع قادمة قريبًا...</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section>
+  <h2>📞 Contact with me</h2>
+  <div class="box">
+
+    <p>📱 Phone: <a href="tel:01063296174">01063296174</a></p>
+
+    <p>💬 WhatsApp:
+      <a href="https://wa.me/201063296174" target="_blank">تواصل</a>
+    </p>
+
+    <p>✈️ Telegram:
+      <a href="https://t.me/201063296174" target="_blank">تواصل</a>
+    </p>
+
+    <p>📘 Facebook:
+      <a href="https://www.facebook.com/share/18eb6tLSFv/" target="_blank">فيسبوك</a>
+    </p>
+
+    <p>📸 Instagram:
+      <a href="https://www.instagram.com/x.m7moud.x" target="_blank">@x.m7moud.x</a>
+    </p>
+
+    <p>📧 Email:
+      <a href="mailto:7oda.saleh.18.9.2010@gmail.com">
+        7oda.saleh.18.9.2010@gmail.com
+      </a>
+    </p>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 Mahmoud Samir
+</footer>
+
+<script>
+  // DARK / LIGHT MODE
+  function toggleMode(){
+    document.body.classList.toggle("light");
+  }
+
+  // SCROLL ANIMATION
+  const boxes = document.querySelectorAll(".box");
+
+  window.addEventListener("scroll", () => {
+    boxes.forEach(box => {
+      const rect = box.getBoundingClientRect();
+      if(rect.top < window.innerHeight - 100){
+        box.classList.add("show");
+      }
+    });
+  });
+
+  // أول تحميل
+  boxes.forEach((box, i)=>{
+    setTimeout(()=>{
+      box.classList.add("show");
+    }, i*200);
+  });
+</script>
+
+</body>
+</html>
